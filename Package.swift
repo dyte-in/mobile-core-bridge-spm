@@ -2,8 +2,8 @@
 import PackageDescription
 
 // BEGIN KMMBRIDGE VARIABLES BLOCK (do not edit)
-let remoteKotlinUrl = "https://sdk-assets.realtime.cloudflare.com/RealtimeKitFlutterCoreKMM-unspecified-a757b0df-c880-4be3-a62a-bde259fe8761.xcframework.zip"
-let remoteKotlinChecksum = "76b721da03dca8f7d218f414b3cde507a02bf465f51fa1edf3573ff7e0cd3edf"
+let remoteKotlinUrl = "https://sdk-assets.realtime.cloudflare.com/RealtimeKitFlutterCoreKMM-unspecified-05ab79a3-9847-4754-9ac4-11d21be00e2e.xcframework.zip"
+let remoteKotlinChecksum = "053100f92354df436c95d1fc49a2bfa792a7905350c73aacd7aec66a89edf35f"
 let packageName = "RealtimeKitFlutterCoreKMM"
 // END KMMBRIDGE BLOCK
 
@@ -11,14 +11,14 @@ let package = Package(
     name: "RealtimeKitBridge",
     platforms: [.iOS(.v13)],
     products: [
-        .library(name: packageName, targets: [packageName, "DyteWebRTC"]),
-        .library(name: "DyteWebRTC", targets: ["DyteWebRTC"]),
+        .library(name: packageName, targets: [packageName, "RTKWebRTC"]),
+        .library(name: "RTKWebRTC", targets: ["RTKWebRTC"]),
     ],
     targets: [
         .binaryTarget(
-            name: "DyteWebRTC",
-            url: "https://sdk-assets.realtime.cloudflare.com/DyteWebRTC_v0.0.4.zip",
-            checksum: "25318dfb4bd018fde6ed7fd3337d9aa1c62fc8b39ab985c60fa530eb3819e68a"
+            name: "RTKWebRTC",
+            url: "https://sdk-assets.realtime.cloudflare.com/RTKWebRTC-v125.6422.07.zip",
+            checksum: "114cb3ea15c5709f2c35d2b1c7a64e742a6902d375d54895984263bb79d75ce3"
         ),
         .binaryTarget(
             name: packageName,
