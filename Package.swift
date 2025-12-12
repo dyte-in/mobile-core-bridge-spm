@@ -2,8 +2,8 @@
 import PackageDescription
 
 // BEGIN KMMBRIDGE VARIABLES BLOCK (do not edit)
-let remoteKotlinUrl = "https://sdk-assets.realtime.cloudflare.com/RealtimeKitFlutterCoreKMM-unspecified-a49f4c3b-bbe1-47cf-a5e0-32feadf398ba.xcframework.zip"
-let remoteKotlinChecksum = "785882a722a2c3b324b3f55951b193d8055b3f8aa96429fd2a901636b01d3872"
+let remoteKotlinUrl = "https://sdk-assets.realtime.cloudflare.com/RealtimeKitFlutterCoreKMM-unspecified-c99d03b1-b859-48b8-80aa-17d56aa8add6.xcframework.zip"
+let remoteKotlinChecksum = "ef2e420ff23dc5e1c0e84d32806bdea973e6c8d0b56adc72be226a145209e34f"
 let packageName = "RealtimeKitFlutterCoreKMM"
 // END KMMBRIDGE BLOCK
 
@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RTKWebRTC",
-            url: "https://sdk-assets.realtime.cloudflare.com/RTKWebRTC-v125.6422.07.zip",
-            checksum: "114cb3ea15c5709f2c35d2b1c7a64e742a6902d375d54895984263bb79d75ce3"
+            url: "https://sdk-assets.realtime.cloudflare.com/RTKWebRTC-137.7151.10.2.zip",
+            checksum: "2a56715d11dc3cbb722b43fc712fec68d9838b68b7297076e7ac3d0f8e9b6ccb"
         ),
         .binaryTarget(
             name: packageName,
